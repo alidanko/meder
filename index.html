@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <form name="my">
+                Email: <input name="Email" class="write" type="email" placeholder="example@mail.ru"><br>
+                Password: <input name="Password" class="write" type="password" placeholder="password"><br>
+                Message: <textarea name="text" class="write" cols="20" rows="4"
+            placeholder="your message"></textarea><br>
+                Name: <input name="Name" class="write" type="text" placeholder="John Carter"><br>
+                Surname: <input name="Surname" class="write" type="text" placeholder="John Carter"><br>
+                <button type="submit">Submit</button><br>
+            </form>
+
+        <script>
+        let form = document.form.my;
+
+        let Email = form.elements.Email;
+        let Password = form.elements.Password;
+        let text = form.elements.text;
+        let Name = form.elements.Name;
+        let Surname = form.elements.Surname;
+
+        document.write(Email.value);
+        document.write(Password.value);
+        document.write(text.value);
+        document.write(Name.value);
+        document.write(Surname.value);
+    </script>
+</body>
+
+</html>
